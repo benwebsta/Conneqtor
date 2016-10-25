@@ -28,11 +28,18 @@ import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
 
 import clientsearch from './clientsearch/clientsearch.component';
+import advisorsearch from './advisorsearch/advisorsearch.component';
+import idealclients from './idealclients/idealclients.component';
+import clientconneqtor from './clientconneqtor/clientconneqtor.component';
+import clientacquisitionsystem from './clientacquisitionsystem/clientacquisitionsystem.component';
+import pricing from './pricing/pricing.component';
 
 import './app.less';
 
 angular.module('conneqtorApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
-    uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util, clientsearch
+    uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util, 
+    clientsearch, advisorsearch, idealclients, clientconneqtor, clientacquisitionsystem,
+    pricing
   ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
