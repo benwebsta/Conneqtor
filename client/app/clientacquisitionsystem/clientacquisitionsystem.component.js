@@ -3,20 +3,20 @@ const angular = require('angular');
 
 const uiRouter = require('angular-ui-router');
 
-import routes from './clientacquisitionsystem.routes';
+import routes from './clientAcquisitionSystem.routes';
 
-export class ClientacquisitionsystemComponent {
+export class ClientAcquisitionSystemComponent {
   /*@ngInject*/
   constructor() {
     this.message = 'Hello';
   }
 }
 
-export default angular.module('conneqtorApp.clientacquisitionsystem', [uiRouter])
+export default angular.module('conneqtorApp.clientAcquisitionSystem', [uiRouter])
   .config(routes)
-  .component('clientacquisitionsystem', {
-    template: require('./clientacquisitionsystem.html'),
-    controller: ClientacquisitionsystemComponent,
-    controllerAs: 'clientacquisitionsystemCtrl'
+  .component('clientAcquisitionSystem', {
+    template: require('./clientAcquisitionSystem.html'),
+    controller: ClientAcquisitionSystemComponent,
+    controllerAs: 'clientAcquisitionSystemCtrl'
   })
   .name;

@@ -3,20 +3,20 @@ const angular = require('angular');
 
 const uiRouter = require('angular-ui-router');
 
-import routes from './idealclients.routes';
+import routes from './idealClients.routes';
 
-export class IdealclientsComponent {
+export class IdealClientsComponent {
   /*@ngInject*/
   constructor() {
     this.message = 'Hello';
   }
 }
 
-export default angular.module('conneqtorApp.idealclients', [uiRouter])
+export default angular.module('conneqtorApp.idealClients', [uiRouter])
   .config(routes)
-  .component('idealclients', {
-    template: require('./idealclients.html'),
-    controller: IdealclientsComponent,
-    controllerAs: 'idealclientsCtrl'
+  .component('idealClients', {
+    template: require('./idealClients.html'),
+    controller: IdealClientsComponent,
+    controllerAs: 'idealClientsCtrl'
   })
   .name;

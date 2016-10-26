@@ -1,14 +1,14 @@
 'use strict';
 
-describe('Component: ClientacquisitionsystemComponent', function() {
+describe('Component: ClientAcquisitionSystemComponent', function() {
   // load the controller's module
-  beforeEach(module('conneqtorApp.clientacquisitionsystem'));
+  beforeEach(module('conneqtorApp.clientAcquisitionSystem'));
 
-  var ClientacquisitionsystemComponent;
+  var ClientAcquisitionSystemComponent;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function($componentController) {
-    ClientacquisitionsystemComponent = $componentController('clientacquisitionsystem', {});
+    ClientAcquisitionSystemComponent = $componentController('clientAcquisitionSystem', {});
   }));
 
   it('should ...', function() {

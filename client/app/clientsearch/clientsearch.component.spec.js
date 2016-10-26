@@ -1,14 +1,14 @@
 'use strict';
 
-describe('Component: ClientsearchComponent', function() {
+describe('Component: ClientSearchComponent', function() {
   // load the controller's module
-  beforeEach(module('conneqtorApp.clientsearch'));
+  beforeEach(module('conneqtorApp.clientSearch'));
 
-  var ClientsearchComponent;
+  var ClientSearchComponent;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function($componentController) {
-    ClientsearchComponent = $componentController('clientsearch', {});
+    ClientSearchComponent = $componentController('clientSearch', {});
   }));
 
   it('should ...', function() {

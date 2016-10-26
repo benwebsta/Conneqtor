@@ -3,8 +3,8 @@
 export default function($stateProvider) {
   'ngInject';
   $stateProvider
-    .state('clientconneqtor', {
-      url: '/clientconneqtor',
-      template: '<clientconneqtor></clientconneqtor>'
+    .state('clientConneqtor', {
+      url: '/clientConneqtor',
+      template: '<client-conneqtor></client-conneqtor>'
     });
 }

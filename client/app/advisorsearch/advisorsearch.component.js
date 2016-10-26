@@ -3,20 +3,20 @@ const angular = require('angular');
 
 const uiRouter = require('angular-ui-router');
 
-import routes from './advisorsearch.routes';
+import routes from './advisorSearch.routes';
 
-export class AdvisorsearchComponent {
+export class AdvisorSearchComponent {
   /*@ngInject*/
   constructor() {
     this.message = 'Hello';
   }
 }
 
-export default angular.module('conneqtorApp.advisorsearch', [uiRouter])
+export default angular.module('conneqtorApp.advisorSearch', [uiRouter])
   .config(routes)
-  .component('advisorsearch', {
-    template: require('./advisorsearch.html'),
-    controller: AdvisorsearchComponent,
-    controllerAs: 'advisorsearchCtrl'
+  .component('advisorSearch', {
+    template: require('./advisorSearch.html'),
+    controller: AdvisorSearchComponent,
+    controllerAs: 'advisorSearchCtrl'
   })
   .name;

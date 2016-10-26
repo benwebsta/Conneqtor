@@ -27,19 +27,23 @@ import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
 
-import clientsearch from './clientsearch/clientsearch.component';
-import advisorsearch from './advisorsearch/advisorsearch.component';
-import idealclients from './idealclients/idealclients.component';
-import clientconneqtor from './clientconneqtor/clientconneqtor.component';
-import clientacquisitionsystem from './clientacquisitionsystem/clientacquisitionsystem.component';
+import clientSearch from './clientSearch/clientSearch.component';
+import advisorSearch from './advisorSearch/advisorSearch.component';
+import idealClients from './idealClients/idealClients.component';
+import clientConneqtor from './clientConneqtor/clientConneqtor.component';
+import clientAcquisitionSystem from './clientAcquisitionSystem/clientAcquisitionSystem.component';
 import pricing from './pricing/pricing.component';
+import casInformation from './casInformation/casInformation.component';
+import casBenefits from './casBenefits/casBenefits.component';
+import casGetStarted from './casGetStarted/casGetStarted.component';
+import whatIsConneqtor from './whatIsConneqtor/whatIsConneqtor.component';
 
 import './app.less';
 
 angular.module('conneqtorApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
     uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util, 
-    clientsearch, advisorsearch, idealclients, clientconneqtor, clientacquisitionsystem,
-    pricing
+    clientSearch, advisorSearch, idealClients, clientConneqtor, clientAcquisitionSystem,
+    pricing, casInformation, casBenefits, casGetStarted, whatIsConneqtor
   ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

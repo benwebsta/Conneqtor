@@ -1,14 +1,14 @@
 'use strict';
 
-describe('Component: ClientconneqtorComponent', function() {
+describe('Component: ClientConneqtorComponent', function() {
   // load the controller's module
-  beforeEach(module('conneqtorApp.clientconneqtor'));
+  beforeEach(module('conneqtorApp.clientConneqtor'));
 
-  var ClientconneqtorComponent;
+  var ClientConneqtorComponent;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function($componentController) {
-    ClientconneqtorComponent = $componentController('clientconneqtor', {});
+    ClientConneqtorComponent = $componentController('clientConneqtor', {});
   }));
 
   it('should ...', function() {

@@ -1,14 +1,14 @@
 'use strict';
 
-describe('Component: IdealClientsComponent', function() {
+describe('Component: CasBenefitsComponent', function() {
   // load the controller's module
-  beforeEach(module('conneqtorApp.idealClients'));
+  beforeEach(module('conneqtorApp.casBenefits'));
 
-  var IdealClientsComponent;
+  var CasBenefitsComponent;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function($componentController) {
-    IdealClientsComponent = $componentController('idealClients', {});
+    CasBenefitsComponent = $componentController('casBenefits', {});
   }));
 
   it('should ...', function() {

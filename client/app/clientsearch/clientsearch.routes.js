@@ -3,8 +3,8 @@
 export default function($stateProvider) {
   'ngInject';
   $stateProvider
-    .state('clientsearch', {
-      url: '/clientsearch',
-      template: '<clientsearch></clientsearch>'
+    .state('clientSearch', {
+      url: '/clientSearch',
+      template: '<client-search></client-search>'
     });
 }
