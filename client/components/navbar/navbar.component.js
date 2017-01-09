@@ -7,6 +7,18 @@ export class NavbarComponent {
   menu = [{
     title: 'Home',
     state: 'main'
+  },
+  {
+    title: 'Find an Advisor',
+    state: 'advisorSearch'
+  },
+  {
+    title: 'What is Conneqtor?',
+    state: 'whatIsConneqtor'
+  },
+  {
+    title: 'Search for Clients',
+    state: 'clientSearch'
   }];
   isLoggedIn: Function;
   isAdmin: Function;
