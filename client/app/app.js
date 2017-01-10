@@ -37,13 +37,15 @@ import casInformation from './casInformation/casInformation.component';
 import casBenefits from './casBenefits/casBenefits.component';
 import casGetStarted from './casGetStarted/casGetStarted.component';
 import whatIsConneqtor from './whatIsConneqtor/whatIsConneqtor.component';
+import privacyPolicy from './privacyPolicy/privacyPolicy.component';
+import termsOfUse from './termsOfUse/termsOfUse.component';
 
 import './app.less';
 
 angular.module('conneqtorApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
     uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util, 
     clientSearch, advisorSearch, idealClients, clientConneqtor, clientAcquisitionSystem,
-    pricing, casInformation, casBenefits, casGetStarted, whatIsConneqtor
+    pricing, casInformation, casBenefits, casGetStarted, whatIsConneqtor, privacyPolicy, termsOfUse
   ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
