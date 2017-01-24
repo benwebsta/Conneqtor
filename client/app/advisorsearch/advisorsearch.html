@@ -1,10 +1,19 @@
-<div class="background">
-	<br><h1>Advisor Search Page</h1><br><br>
-	<div class="shell">
-		<div class="row">
-			<div class='col-xs-6 col-sm-offset-3'>
-				<button class="btn-block home_button" ui-sref="main">Return to home page.</button>
-			</div>
-		</div><br>
+<h1>Advisor Search Page</h1><br><br>
+<div class="row">
+	<div class='col-xs-4 col-sm-offset-4'>
+		<div class="question">
+			Question 1: Are you married?<br><br>
+			<input type="radio" name="maritalStatus" value="yes"> yes<br>
+			<input type="radio" name="maritalStatus" value="no"> no<br><br>
+			<button ng-click="advisorSearchCtrl.previous()" class="previous" type="button">Previous</button>
+			<button ng-click="advisorSearchCtrl.next()" class="next" type="button">Next</button>
+		</div>
 	</div>
+</div>
+<div class="shell">
+	<div class="row">
+		<div class='col-xs-6 col-sm-offset-3'>
+			<button class="btn-block home_button" ui-sref="main">Return to home page.</button>
+		</div>
+	</div><br>
 </div>
