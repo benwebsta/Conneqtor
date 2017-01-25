@@ -1,10 +1,12 @@
 <h1>Advisor Search Page</h1><br><br>
 <div class="row">
 	<div class='col-xs-4 col-sm-offset-4'>
-		<div class="question">
-			Question 1: Are you married?<br><br>
-			<input type="radio" name="maritalStatus" value="yes"> yes<br>
-			<input type="radio" name="maritalStatus" value="no"> no<br><br>
+		<div ng-cloak class="question">
+			{{advisorSearchCtrl.currentQuestion.question}}<br><br>
+			<div class="answers" ng-repeat="answer in advisorSearchCtrl.currentQuestion.answers">
+				<input type="radio"> {{answer}}
+				<br>
+			</div><br>
 			<button ng-click="advisorSearchCtrl.previous()" class="previous" type="button">Previous</button>
 			<button ng-click="advisorSearchCtrl.next()" class="next" type="button">Next</button>
 		</div>
