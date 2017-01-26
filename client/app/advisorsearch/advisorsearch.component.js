@@ -42,22 +42,23 @@ export class AdvisorSearchComponent {
   currentQuestion = '';
   arrayPosition = '';
   questions = [];
-
+  radio = '';
+  noAnswer1 = '';
+  noAnswer2 = '';
   /*@ngInject*/
   constructor () {
+    this.noAnswer1 = false;
+    this.noAnswer2 = false;
+    this.radio = {response:""};
     this.arrayPosition = 0;
     this.question1 = {
       question:"Do you have any pets?",
-      answers: ["yes", 
+      answers: ["Dog",
+                "Cat",
+                "Fish",
+                "Bird",
+                "other", 
                 "no"]
-    };
-    this.question1b = {
-      question:"What kind?",
-      answers: ["dog", 
-                "cat", 
-                "fish", 
-                "bird", 
-                "other"]
     };
     this.question2 = {
       question:"Which would you prefer?",
@@ -250,7 +251,7 @@ export class AdvisorSearchComponent {
                 "Investing"]
     };
 
-    this.questions = [this.question1, this.question1b, this.question2, this.question3,
+    this.questions = [this.question1, this.question2, this.question3,
                       this.question4, this.question5, this.question6, this.question7,
                       this.question8, this.question9, this.question10, this.question11,
                       this.question12, this.question13, this.question14, this.question15,
@@ -260,19 +261,31 @@ export class AdvisorSearchComponent {
                       this.question28, this.question29, this.question30, this.question31];
     this.currentQuestion = this.question1;
   }
+  radioButton() {
+    this.noAnswer1 = true;
+  }
   next() {
-    if(this.arrayPosition < this.questions.length - 1){
-      this.arrayPosition++;
+    if(this.noAnswer1 == false){
+      this.noAnswer2 = true;
     }
-    console.log(this.arrayPosition);
-    this.currentQuestion = this.questions[this.arrayPosition];
+    else{
+      if(this.arrayPosition < this.questions.length - 1){
+        this.arrayPosition++;
+      }
+      this.currentQuestion = this.questions[this.arrayPosition];
+      this.radio.response="";
+      this.noAnswer2 = false;
+      this.noAnswer1 = false;
+    }
   }
   previous() {
     if(this.arrayPosition > 0){
       this.arrayPosition--;
-    }
-    console.log(this.arrayPosition);  
+    } 
     this.currentQuestion = this.questions[this.arrayPosition];
+    this.radio.response="";
+    this.noAnswer2 = false;
+    this.noAnswer1 = false;
   }
 }
 

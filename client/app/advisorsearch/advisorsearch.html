@@ -6,9 +6,11 @@
 			<button ng-show="advisorSearchCtrl.arrayPosition < advisorSearchCtrl.questions.length - 1" ng-click="advisorSearchCtrl.next()" class="next" type="button">Next</button>
 			<h4><b>{{advisorSearchCtrl.arrayPosition + 1}}: {{advisorSearchCtrl.currentQuestion.question}}</b></h4>
 			<div class="answers" ng-repeat="answer in advisorSearchCtrl.currentQuestion.answers">
-				<input name="answers" type="radio"> {{answer}}
+				<input type="radio" name="answers" ng-value=answer ng-click="advisorSearchCtrl.radioButton()" ng-model="advisorSearchCtrl.radio.response"> {{answer}}
 				<br>
 			</div><br>
+			<h5 ng-show="advisorSearchCtrl.noAnswer2"><b>Please Select an answer before continuing.</b></h5>
+			{{advisorSearchCtrl.radio.response}}
 		</div>
 	</div>
 </div>
